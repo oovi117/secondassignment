@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #f6fefd;
+  font-family: "Sofia Sans", sans-serif;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.left {
+  width: 50%;
+  margin: 40px auto;
+  border: 2px solid;
+}
+
+
+.left .img {
+  width: 200px;
+  margin: 20px;
+}
+
+.img img {
+  width: 100%;
+}
+
+.individuals {
+  margin: 40px;
+}
+
+.individuals h2 {
+  margin-bottom: 20px;
+}
+
+.individuals p {
+  font-size: 14px;
+  opacity: 0.6;
+  word-spacing: 2px;
+  line-height: 20px;
+}
+
+.right {
+  background-color: white;
+  margin: 30px auto;
+  width: 50%;
+  border: 2px solid;
+  padding: 20px;
+}
+
+form section:not(.fourthsec) {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+form .firstsec div,
+.secondsec div,
+.thirdsec div {
+  width: 48%;
+}
+
+form div input,
+div select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(195, 195, 195);
+  outline: #2ec4b6;
+}
+
+
+form .fourthsec div {
+  width: 100%;
+  margin: 20px 0;
+}
+
+form button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  color: white;
+  background-color: #2ec4b6;
+  border: none;
+}
+
+form input:hover,
+select:hover {
+  border: 3px solid #2ec4b6;
+}
+
+form a {
+  color: #2ec4b6;
+}
+
+form p {
+  font-size: 12px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    display: grid;
+  }
+
+  .left {
+    width: 80%;
+    margin: 23px;
+  }
+
+  .right {
+    width: 80%;
+    height: auto;
+    margin: auto;
+  }
+  form section:not(.fourthsec) {
+    flex-direction: column;
+    margin: -5px 0;
+  }
+
+  form .firstsec div,
+  .secondsec div,
+  .thirdsec div,
+  .fourthsec div {
+    width: 100%;
+    margin: 15px 0;
+  }
+}

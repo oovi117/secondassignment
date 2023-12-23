@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <section class="img">
+          <img src="./logo.png" alt="circle logo" />
+        </section>
+        <section class="individuals">
+          <h2>For Individuals</h2>
+          <p>
+            Start benefiting from the wellness experience. For <br />companies
+            looking on increasing productivity, and improving <br />organization
+            wellness.
+          </p>
+        </section>
+      </div>
+
+      <div class="right">
+        <form action="">
+          <section class="firstsec">
+            <div class="">
+              <label for="firstname">First Name</label><br />
+              <input
+                type="text"
+                id="firstname"
+                placeholder="Enter your first name"
+              />
+            </div>
+
+            <div>
+              <label for="lastname">Last Name</label>
+              <input
+                type="text"
+                id="lastname"
+                placeholder="Enter your last name"
+              />
+            </div>
+          </section>
+
+          <section class="secondsec">
+            <div>
+              <label for="gender">Gender</label>
+              <select name="" id="gender" required>
+                <option value="" disabled selected hidden>Select here</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="dob">Date of Birth</label>
+              <input type="date" id="dob" value="Select here" />
+            </div>
+          </section>
+
+          <section class="thirdsec">
+            <div>
+              <label for="weight">Weight(KG)</label>
+              <input type="number" id="weight" placeholder="Enter weight" />
+            </div>
+
+            <div>
+              <label for="height">Height(CM)</label>
+              <input type="number" id="height" placeholder="Enter height" />
+            </div>
+          </section>
+
+          <section class="fourthsec">
+            <div>
+              <label for="actlevel">Activity Level</label>
+              <select name="" id="actlevel" required>
+                <option value="" disabled selected hidden>Select here</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="experienced">Experienced</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="passw">Password</label>
+              <input type="password" id="passw" />
+            </div>
+          </section>
+
+          <button>Register</button>
+          <p>
+            By clicking Register, you agree to our
+            <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
